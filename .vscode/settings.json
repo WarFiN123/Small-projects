@@ -53,5 +53,6 @@
         "algorithm": "cpp",
         "iomanip": "cpp",
         "optional": "cpp"
-    }
+    },
+    "codium.codeCompletion.enable": false
 }

@@ -3,10 +3,8 @@
 #include <string>
 
 // Simple calculator
-long double num1, num2, num3 = 0;
-std::string operation;
 
-long double hypotnuse_cal(long double a, long double b)
+long double hypotenuse_cal(long double a, long double b)
 {
     return sqrt(a * a + b * b);
 }
@@ -44,7 +42,7 @@ long double calculate(long double num1, long double num2, long double num3, std:
     }
     else if (operation == "hypotenuse")
     {
-        return hypotnuse_cal(num1, num2);
+        return hypotenuse_cal(num1, num2);
     }
     else if (operation == "leg")
     {
@@ -99,6 +97,8 @@ long double calculate(long double num1, long double num2, long double num3, std:
 
 int main()
 {
+    long double num1, num2, num3 = 0;
+    std::string operation;
     std::cout << "Enter the first number: ";
     std::cin >> num1;
     std::cin.ignore();
