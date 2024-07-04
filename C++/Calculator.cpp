@@ -30,7 +30,12 @@ long double calculate(long double num1, long double num2, long double num3, std:
     }
     else if (operation == "/")
     {
-        return num1 / num2;
+        if (num1 == 0 || num2 == 0) {
+            std::cout << "Error: Cannot divide by zero." << std::endl;
+            return false;
+        } else {
+            return num1 / num2;
+        }
     }
     else if (operation == "%")
     {
