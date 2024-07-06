@@ -52,7 +52,17 @@
         "xutility": "cpp",
         "algorithm": "cpp",
         "iomanip": "cpp",
-        "optional": "cpp"
+        "optional": "cpp",
+        "pass the pillow": "c",
+        "chrono": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp",
+        "stop_token": "cpp",
+        "thread": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp"
     },
     "codium.codeCompletion.enable": false
 }
