@@ -26,7 +26,7 @@ int main()
         std::cin >> num3;
     }
 
-    long double result = calculate(num1, num2, num3, operation);
+    auto result = calculate(num1, num2, num3, operation);
 
     std::cout << "Result: " << result << std::endl;
 
