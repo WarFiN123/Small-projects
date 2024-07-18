@@ -62,7 +62,9 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "unordered_map": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "functional": "cpp",
+        "variant": "cpp"
     },
     "codium.codeCompletion.enable": false
 }
