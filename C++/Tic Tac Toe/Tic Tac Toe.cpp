@@ -325,6 +325,7 @@ int main()
                 game_on = false;
             }
         }
+        system("CLS");
         print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
         check_win(t1, t2, t3, m1, m2, m3, b1, b2, b3);
     }
