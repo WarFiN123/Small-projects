@@ -8,4 +8,4 @@
 - Install gcc v10+ from [here](https://winlibs.com/)
 - Add gcc to environmental variables
 - Run ```g++ -std=c++20 "Tic Tac Toe.cpp" -o "Tic Tac Toe"``` in command prompt/powershell
-- Execute you newely built `Tic Tac Toe.exe` file
+- Execute your newely built `Tic Tac Toe.exe` file
