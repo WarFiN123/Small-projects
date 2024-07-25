@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#define M_PI 3.14159265358979323846
 
 long double hypotenuse_cal(long double, long double);
 long double leg_cal(long double, long double);

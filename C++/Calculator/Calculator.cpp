@@ -2,7 +2,6 @@
 #include <cmath>
 #include <string>
 #include "functions.h"
-#define M_PI 3.14159265358979323846
 
 // Simple calculator
 
