@@ -24,11 +24,57 @@ void print_with_color(char c)
 
 void print_board(char t1, char t2, char t3, char m1, char m2, char m3, char b1, char b2, char b3)
 {
-    print_with_color(t1); std::cout << " | "; print_with_color(t2); std::cout << " | "; print_with_color(t3); std::cout << std::endl;
+    char ttt1, ttt2, ttt3, mmm1, mmm2, mmm3, bbb1, bbb2, bbb3;
+    if (t1 == ' ') {
+        ttt1 = '1';
+    } else {
+        ttt1 = t1;
+    }
+    if (t2 == ' ') {
+        ttt2 = '2';
+    } else {
+        ttt2 = t2;
+    }
+    if (t3 == ' ') {
+        ttt3 = '3';
+    } else {
+        ttt3 = t3;
+    }
+    if (m1 == ' ') {
+        mmm1 = '4';
+    } else {
+        mmm1 = m1;
+    }
+    if (m2 == ' ') {
+        mmm2 = '5';
+    } else {
+        mmm2 = m2;
+    }
+    if (m3 == ' ') {
+        mmm3 = '6';
+    } else {
+        mmm3 = m3;
+    }
+    if (b1 == ' ') {
+        bbb1 = '7';
+    } else {
+        bbb1 = b1;
+    }
+    if (b2 == ' ') {
+        bbb2 = '8';
+    } else {
+        bbb2 = b2;
+    }
+    if (b3 == ' ') {
+        bbb3 = '9';
+    } else {
+        bbb3 = b3;
+    }
+    print_with_color(ttt1); std::cout << " | "; print_with_color(ttt2); std::cout << " | "; print_with_color(ttt3); std::cout << std::endl;
     std::cout << "---------" << std::endl;
-    print_with_color(m1); std::cout << " | "; print_with_color(m2); std::cout << " | "; print_with_color(m3); std::cout << std::endl;
+    print_with_color(mmm1); std::cout << " | "; print_with_color(mmm2); std::cout << " | "; print_with_color(mmm3); std::cout << std::endl;
     std::cout << "---------" << std::endl;
-    print_with_color(b1); std::cout << " | "; print_with_color(b2); std::cout << " | "; print_with_color(b3); std::cout << std::endl;
+    print_with_color(bbb1); std::cout << " | "; print_with_color(bbb2); std::cout << " | "; print_with_color(bbb3); std::cout << std::endl;
 }
 template <typename T>
     requires std::same_as<T, char>
@@ -87,6 +133,8 @@ int main()
                     t1 = 'X';
                     tt1 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 2)
@@ -100,6 +148,8 @@ int main()
                     t2 = 'X';
                     tt2 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 3)
@@ -113,6 +163,8 @@ int main()
                     t3 = 'X';
                     tt3 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 4)
@@ -126,6 +178,8 @@ int main()
                     m1 = 'X';
                     mm1 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 5)
@@ -139,6 +193,8 @@ int main()
                     m2 = 'X';
                     mm2 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 6)
@@ -152,6 +208,8 @@ int main()
                     m3 = 'X';
                     mm3 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 7)
@@ -165,6 +223,8 @@ int main()
                     b1 = 'X';
                     bb1 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 8)
@@ -178,6 +238,8 @@ int main()
                     b2 = 'X';
                     bb2 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 9)
@@ -191,6 +253,8 @@ int main()
                     b3 = 'X';
                     bb3 = true;
                     turn = 'O';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else
@@ -213,6 +277,8 @@ int main()
                     t1 = 'O';
                     tt1 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 2)
@@ -226,6 +292,8 @@ int main()
                     t2 = 'O';
                     tt2 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 3)
@@ -239,6 +307,8 @@ int main()
                     t3 = 'O';
                     tt3 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 4)
@@ -252,6 +322,8 @@ int main()
                     m1 = 'O';
                     mm1 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 5)
@@ -265,6 +337,8 @@ int main()
                     m2 = 'O';
                     mm2 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 6)
@@ -278,6 +352,8 @@ int main()
                     m3 = 'O';
                     mm3 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 7)
@@ -291,6 +367,8 @@ int main()
                     b1 = 'O';
                     bb1 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 8)
@@ -304,6 +382,8 @@ int main()
                     b2 = 'O';
                     bb2 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else if (play == 9)
@@ -317,6 +397,8 @@ int main()
                     b3 = 'O';
                     bb3 = true;
                     turn = 'X';
+                    system("CLS");
+                    print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
                 }
             }
             else
@@ -325,8 +407,6 @@ int main()
                 game_on = false;
             }
         }
-        system("CLS");
-        print_board(t1, t2, t3, m1, m2, m3, b1, b2, b3);
         check_win(t1, t2, t3, m1, m2, m3, b1, b2, b3);
     }
 
