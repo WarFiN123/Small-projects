@@ -24,12 +24,9 @@ int main() {
 
   if (is_palindrome(text)) {
     std::cout << text << " is a palindrome." << std::endl;
-    return 0;
   } else {
     std::cout << text << " is not a palindrome." << std::endl;
-    return 1;
   }
 
-  system ("pause");
-  
+  system("pause");
 }
