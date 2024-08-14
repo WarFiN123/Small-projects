@@ -2,11 +2,10 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <iomanip>
 using namespace std;
 
 vector<string> sort(vector<string> sentences) {
-    sort (sentences.begin(), sentences.end());
+    std::ranges::sort(sentences.begin(), sentences.end());
 
     return sentences;
 }
@@ -18,11 +17,8 @@ int main() {
     bool sentence_enterded = true;
 
     cout << "Please enter your sentence\n" << "Enter '.' to stop" << endl;
-    for (int i = 0; newest_sentence != "."; i++) {
-        getline (cin, newest_sentence);
-        if (newest_sentence != ".") {
-            sentences.push_back(newest_sentence);
-        }
+    while (getline(cin, newest_sentence) && newest_sentence != ".") {
+        sentences.push_back(newest_sentence);
     }
 
     if (sentence_enterded == true) {

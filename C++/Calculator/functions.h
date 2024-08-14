@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#define M_PI 3.14159265358979323846
 
 long double hypotenuse_cal(long double, long double);
 long double leg_cal(long double, long double);
@@ -51,11 +50,11 @@ T calculate(T num1, T num2, T num3, std::string operation)
     }
     else if (operation == "a(circle)")
     {
-        return M_PI * num1 * num1;
+        return std::numbers::pi * num1 * num1;
     }
     else if (operation == "c(circle)")
     {
-        return 2 * M_PI * num1;
+        return 2 * std::numbers::pi * num1;
     }
     else if (operation == "a(tri)")
     {
@@ -83,7 +82,7 @@ T calculate(T num1, T num2, T num3, std::string operation)
     }
     else if (operation == "v(cylinder)")
     {
-        return pow(num1, 2) * M_PI * num2;
+        return pow(num1, 2) * std::numbers::pi * num2;
     }
     else
     {
