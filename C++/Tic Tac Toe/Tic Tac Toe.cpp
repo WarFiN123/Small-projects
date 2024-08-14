@@ -419,7 +419,6 @@ int main()
     else if (play_again == 'n' || play_again == 'N')
     {
         std::cout << "Goodbye!" << std::endl;
-        throw;
     }
     else
     {
