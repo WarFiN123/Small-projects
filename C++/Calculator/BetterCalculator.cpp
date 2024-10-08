@@ -34,6 +34,15 @@ class Calculator {
             }
             return result;
         }
+
+        template <typename T>
+        double divide(T values) {
+            double result = values[0];
+            for (int i = 1; i <= values.size() - 1; i++) {
+                result /= values[i];
+            }
+            return result;
+        }
 };
 
 void print(double result, std::string choice, short int amount) {
@@ -42,7 +51,7 @@ void print(double result, std::string choice, short int amount) {
 
 void enter_nums(std::string op) {
     Calculator calc;
-    if (op == "add" || op == "subtract" || op == "multiply") {
+    if (op == "add" || op == "subtract" || op == "multiply" || op == "divide") {
         std::cout << "How many numbers do you want to " << op << "?" << std::endl;
         std::cin >> amount;
         for (short int i = amount; i > 0; i--) {
@@ -57,6 +66,8 @@ void enter_nums(std::string op) {
             print(calc.minus(entered_vals), "difference", amount);
         } else if (op == "multiply") {
             print(calc.multiply(entered_vals), "product", amount);
+        } else if ( op == "divide") {
+            print(calc.divide(entered_vals), "division", amount);
         }
     }
 }
@@ -78,5 +89,8 @@ int main() {
     }
     else if ( choice == "Multiplication" || choice == "multiplication" || choice == "*" || choice == "product" || choice == "Product" || choice == "into" || choice == "Into" || choice == "3") {
         enter_nums("multiply");
+    }
+    else if (choice == "Division" || choice == "division" || choice == "/" || choice == "Divided by" || choice == "divided by" || choice == "4") {
+        enter_nums("divide");
     }
 }
