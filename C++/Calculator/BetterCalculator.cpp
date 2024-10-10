@@ -64,6 +64,12 @@ public:
         }
         return result;
     }
+
+    template <typename T>
+    double power(T a, T b)
+    {
+        return pow(a, b);
+    }
 };
 
 void print(double result, std::string choice, short int amount)
@@ -101,7 +107,8 @@ void enter_nums(std::string op)
         {
             print(calc.divide(entered_vals), "division", amount);
         }
-        else if (op == "find the remainder of") {
+        else if (op == "find the remainder of")
+        {
             print(calc.mod(entered_vals), "remainder", amount);
         }
     }
@@ -109,7 +116,6 @@ void enter_nums(std::string op)
 
 int main()
 {
-    Calculator calc;
     std::cout << "Calculator" << std::endl;
     std::cout << "Functions:" << std::endl;
     std::cout << "1. Addition | '+' / 'Add' / 'Addition' / 'Plus' / 'Sum'\n2. Subtraction | '-' / 'Subtract' / 'Subtraction' / 'Minus'\n3. Multiplication | '*' / 'Multiply' / 'Multiplication' / 'Times'\n4. Division | '/' / 'Divide' / 'Division' / 'Divided by'\n5. Modulus | '%' / 'Modulus' / 'Modulo' / 'Remainder'\n6. Exponentiation | '^' / 'Exponent' / 'Exponentiation' / 'Power'\n7. Hypotenuse | 'hypotenuse' / 'Hypotenuse'\n8. Leg | 'leg' / 'Leg'\n9. Circumference of circle | 'c(circle)' / 'Circumference of circle' / 'Circumference of a circle'\n11. Area\n12. Volume\n13. Total surface area" << std::endl;
@@ -136,5 +142,16 @@ int main()
     else if (choice == "Modulus" || choice == "modulus" || choice == "Mod" || choice == "mod" || choice == "%" || choice == "Modulo" || choice == "modulo" || choice == "remainder" || choice == "Remainder" || choice == "5")
     {
         enter_nums("find the remainder of");
+    }
+    else if (choice == "Exponentiation" || choice == "exponentiation" || choice == "^" || choice == "exponent" || choice == "Exponent" || choice == "power" || choice == "Power" || choice == "pow" || choice == "Pow" || choice == "pwr" || choice == "Pwr" || choice == "6")
+    {
+        std::cout << "Enter the base number: ";
+        double base = 0;
+        std::cin >> base;
+        std::cout << "Enter the exponent: ";
+        double exponent = 0;
+        std::cin >> exponent;
+        Calculator calc;
+        print(calc.power(base, exponent), "power", 2);
     }
 }
